@@ -5,7 +5,7 @@ Khan.Lau 大神亲情力作，VC下对curl的封装
 <pre>
 CUrlRequest urq;urq.setCookieFile("conf/cookie.txt");urq.setCA("conf/", "cacert.pem");string url = UnicodeToANSI(GlobalVar::getInstance().url + L"/daemon/filtered_party");Parameters parameters;char str[64] = { 0 };sprintf_s(str, "%llu", timestamp);parameters.push_back(make_pair(make_pair("search", STRING_TYPE), str));
 urq.post(url, parameters, [hWnd](const char* body, size_t len)->void {                        }, 
-                        [hWnd](int code)->void {			}
+                        [hWnd](int code)->void {			});
 </pre>
 
 ##Other
