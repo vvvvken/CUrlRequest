@@ -33,8 +33,13 @@ public:
 
 	void get(string url, function<void(const char*body, size_t len)> func_finish, function<void(const int code)> failt_callback);
 	void get(string url, const Headers & headers, function<void(const char*body, size_t len)> func_finish, function<void(const int code)> failt_callback);
+
 	void post(string url, const Parameters &parameters, function<void(const char*body, size_t len)> func_finish, function<void(const int code)> failt_callback);
 	void post(string url, const Headers &headers, const Parameters &parameters, function<void(const char*body, size_t len)> func_finish, function<void(const int code)> failt_callback);
+
+	void post(string url, const string & json, function<void(const char*body, size_t len)> func_finish, function<void(const int code)> failt_callback);
+	void post(string url, const Headers &headers, const string &json, function<void(const char*body, size_t len)> func_finish, function<void(const int code)> failt_callback);
+
 	virtual ~CUrlRequest();
 
 private:
