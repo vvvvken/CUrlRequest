@@ -1,5 +1,5 @@
 #CUrlRequest
-Khan.Lau 大神亲情力作，VC下对curl的封装
+对curl的封装
 ***
 ##Usage
 <pre>
